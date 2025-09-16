@@ -1,9 +1,9 @@
 (function () {
   const plane = document.getElementById('plane');
 
-  const fps = 24;              // frames per second
-  const duration = 3000;       // total animation time in ms
-  const easing = t => 1 - Math.pow(1 - t, 3); // easeOutCubic
+  const fps = 24;
+  const duration = 3000;
+  const easing = t => 1 - Math.pow(1 - t, 3);
 
   function computePositions() {
     const vw = window.innerWidth;
@@ -12,11 +12,9 @@
     const w = plane.offsetWidth;
     const h = plane.offsetHeight;
 
-    // End position: centered
     const endX = (vw - w) / 2;
     const endY = (vh - h) / 2;
 
-    // Start: from left middle, only ~40% visible
     const visiblePart = w * 0.4; 
     const startX = - (w - visiblePart);
     const startY = endY;
