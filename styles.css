@@ -1,0 +1,29 @@
+  html,body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(#87ceeb, #ffffff); /* sky background */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Title */
+  h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #003366;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.8);
+    z-index: 10;
+  }
+
+  /* Plane */
+  .plane {
+    position: absolute;
+    width: 90vw;   /* almost full width (big plane) */
+    height: auto;
+    will-change: transform;
+    z-index: 5;
+  }
